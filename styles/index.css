@@ -5,9 +5,14 @@ nav {
   display: flex;
   justify-content: space-between;
 
-  padding: 20px;
+  padding: 20px 0;
 
   line-height: 0;
+}
+
+#logo{
+  display: flex;
+  align-items: center;
 }
 
 #menu {
@@ -29,4 +34,55 @@ nav {
 
 .bg-surface-color {
   background-color: var(--surface-color);
+}
+
+#about {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+#info {
+  display: flex;
+  align-items: middle ;
+  gap: 32px;
+}
+
+#about-text {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 4px 0;
+}
+
+#about-text h1 {
+  font: var(--text-lg);
+  color: var(--text-primary);
+
+  margin-bottom: 8px;
+}
+
+#about-text p {
+  font: var(--text);
+  color: var(--text-secondary);
+}
+
+#about ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  justify-content: center;
+  min-width: 280px;
+}
+
+#about ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font: var(--text-md);
+  color: var(--text-secondary);
 }

@@ -14,21 +14,70 @@
 </head>
 <body>
   <header class="bg-surface-color">
-    <nav class="container">
-      <a href="#" id="logo">
-        <img src="assets/logo.svg" alt="Logomarca do Travelgram">
-      </a>
-      <div id="menu">
-        <a href="#" id="search">
-          <img src="assets/icons/MagnifyingGlass.svg" alt="Ícone de pesquisa">
+      <nav class="container">
+        <!--
+          <a href="#" id="logo">
+          <img src="assets/logo.svg" alt="Logomarca do Travelgram">
         </a>
-        <a href="#">Explorar</a>
-        <a href="#">Minhas viagens</a>
-        <a href="#" id="profile">
+        <div id="menu">
+          <a href="#" id="search">
+            <img src="assets/icons/MagnifyingGlass.svg" alt="Ícone de pesquisa">
+          </a>
+          <a href="#">Explorar</a>
+          <a href="#">Minhas viagens</a>
+          <a href="#" id="profile">
+            <img src="assets/profile.png" alt="Imagem de perfil do usuário">
+          </a>
+        </div>
+        **** Não é uma boa prática de desenvolvimento. Listas de links devem ser criadas com elementos de lista, ul e li, para melhorar a o uso de leitores de tela que privilegiem a acessibilidade, a semantica e o ranqueamento em motores de busca. Abaixo, a maneira correta. ****
+        -->
+        <a href="#" id="logo">
+          <img src="assets/logo.svg" alt="Logomarca do Travelgram">
+        </a>
+        <ul id="menu">
+          <li>
+            <a href="#" id="search">
+              <img src="assets/icons/MagnifyingGlass.svg" alt="Ícone de pesquisa">
+            </a>
+          </li>
+          <li>
+            <a href="#">Explorar</a>
+          </li>
+          <li>
+            <a href="#">Minhas viagens</a>
+          </li>
+          <li>
+            <a href="#" id="profile">
+              <img src="assets/profile.png" alt="Imagem de perfil do usuário">
+            </a>
+          </li>
+      </nav>
+      <div id="about" class="container">
+        <div id="info">
           <img src="assets/profile.png" alt="Imagem de perfil do usuário">
-        </a>
+          <div id="about-text">
+            <h1>Isabela Torres</h1>
+            <p>
+              Amante de viagens, cultura e gastronomia. 🌍✈️
+              Aqui compartilho as histórias registradas em cada clique, explorando cantinhos fascinantes do nosso planeta a partir da movimentada cidade de São Paulo. 🏙️📸
+            </p>
+          </div>
+        </div>
+        <ul>
+          <li>
+            <img src="assets/icons/MapPin.svg" alt="Ícone de localização">
+            <span>São Paulo, Brasil</span>
+          </li>
+          <li>
+            <img src="assets/icons/AirplaneTilt.svg" alt="Ícone de avião">
+            <span>37 países</span>
+          </li>
+          <li>
+            <img src="assets/icons/Image.svg" alt="Ícone de imagem">
+            <span>240 fotos</span>
+          </li>
+        </ul>
       </div>
-    </nav>
   </header>
 </body>
 </html>
